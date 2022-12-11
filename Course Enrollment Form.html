@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Course Enrollment Form</title>
+</head>
+<body style="background-color: paleturquoise">
+    <form action="">
+        <br>
+        <label>First Name</label>
+        <input type="text" placeholder="Enter your first name"><br><br>
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter your last name"><br><br>
+        <label>User Name</label>
+        <input type="text" placeholder="Enter your username"><br><br>
+        <label>Birth Date</label>
+        <input type="date"><br><br>
+        <label>Gender</label>
+        <input type="radio" name="Gender" id="Male" value="Male" >Male
+        <input type="radio" name="Gender" id="Female" value="Female" >Female<br><br>
+        <label>Hobbies</label>
+        <input type="checkbox" name="Hobbies" id="Drawing" value="Drawing">Drawing
+        <input type="checkbox" name="Hobbies" id="Gardening" value="Gardening">Gardening
+        <input type="checkbox" name="Hobbies" id="Reading Books" value="Reading Books">Reading Books
+        <input type="checkbox" name="Hobbies" id="Video Games" value="Video Games">Video Games
+        <input type="checkbox" name="Hobbies" id="Playing Guitar" value="Playing Guitar">Playing Guitar<br><br>
+        <label>Upload your profile picture</label>
+        <input type="file" accept="image/*"><br><br>
+        <label >Address Line 1</label>
+        <input type="text" placeholder="Enter Address Line 1"><br><br>
+        <label >Address Line 2</label>
+        <input type="text" placeholder="Enter Address Line 2"><br><br>
+        <label for="city" >City</label>
+        <Select name="city" id="city">
+            <option value="Chennai">Chennai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Cochin">Cochin</option>
+        </Select><br><br>
+        <label for="state">State</label>
+        <select name="state" id="state">
+            <option value="TamilNadu">TamilNadu</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Telungana">Telungana</option>
+            <option value="Maharastra">Maharastra</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+        </select><br><br>    
+            <label>Country</label>
+            <input type="radio" name="country" id="India" value="India" >India
+            <input type="radio" name="country" id="Other" value="Other" >Other<br><br>
+        <label >Select your course</label>
+            <Select name="course" id="course">
+                <option value="Full Stack Web Development">Full Stack Web Development</option>
+                <option value="Full Stack Data Science">Full Stack Data Science</option>
+                <option value="Python Programming">Python Programming</option>
+                <option value="Java Programming">Java Programming</option>
+                <option value="MySQL">MySQL</option>
+                <option value="HTML & CSS">HTML & CSS</option>
+                <option value="JavaScript Programming">JavaScript Programming</option>
+            </Select><br><br>
+        <label>Are you currently Student or working Professional?</label>
+            <input type="radio" name="currently doing" id="Student" value="Student" >Student
+            <input type="radio" name="currently doing" id="Working Profession" value="Working Profession" >Working Profession<br><br>
+        <label>LinkedIn Profile</label>
+            <input type="url" placeholder="Enter your LinkedIn Profile Link here">
+            <br><br>
+        <label>Why do you want to take this course?</label>
+            <input type="text" style="height:120px; width:250px;" placeholder="Your Comment">
+        </form>
+    
+</body>
+</html>
