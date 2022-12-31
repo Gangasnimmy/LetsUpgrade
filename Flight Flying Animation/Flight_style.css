@@ -1,0 +1,69 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+   overflow: hidden;
+}
+
+.sky{
+    height: 100%;
+    position: relative;
+    background: linear-gradient(#72adda, #fff);
+}
+
+.cloud1{
+    position: absolute;
+    height: 30%;
+    width: 20%;
+    top: 40%;
+    left: 10%;
+    opacity: 80%;
+}
+
+.cloud2{
+    position: absolute;
+    height: 40%;
+    width: 35%;
+    top: 25%;
+    right: 5%;
+    opacity: 80%;
+}
+
+.cloud3{
+    position: absolute;
+    height: 35%;
+    width: 45%;
+    top: 10%;
+    right: 40%;
+    opacity: 80%;
+}
+
+
+.airplane{ 
+ height: 60%;
+ position: absolute;
+ animation-name: movingplane;
+animation-duration:  10s;
+animation-iteration-count: infinite;
+}
+   
+
+@keyframes drive-airplane{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(1600px);
+    }
+}
+
+@keyframes movingplane {
+	0% { 
+        top: 300px;
+        transform: translateX(0px);
+    }
+    100% {
+        top: 50px;
+        transform: translateX(1600px);
+    }
+}
