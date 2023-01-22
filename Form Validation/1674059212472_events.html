@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Javascript</title>
+
+    <style>
+        #error{
+            display:none;
+            color:red;
+        }
+    </style>
+
+    <script>
+
+function validateData(){
+
+    // first name should not be empty
+    // last name should not be empty
+    // email id should not be empty
+    // contact should not be empty
+    //contact number should be 10 digits long -> not shorter and not longer
+    //email id complete validation (@ and .  should be there and only once)
+
+    // if(document.getElementById("fn").value==""){
+    //     document.getElementById("error").innerHTML="Field should not be empty";
+    //     console.log("error msg");
+    // }
+    let flag = true;    
+    if(document.getElementById("fn").value!="" && document.getElementById("ln").value!="" && document.getElementById("em").value!="" && document.getElementById("contact").value!=""){
+        if(document.getElementById("contact").value.length != 10){
+            alert("contact number should be 10 digits long ");
+            flag = false;
+        }
+        
+    }
+    else{
+        alert("Fields cannot be empty");
+        flag = false;
+    }   
+
+    let regexp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;   
+      
+    if(document.getElementById("em").value.match(regexp)){
+
+    }
+    else{
+        alert("Enter valid email id")
+        flag = false;
+    }   
+
+    if(flag){
+        alert("Form Validated!!!")
+    }
+
+   //     document.getElementById("error").style.display = "block";
+   //    }
+   //    else
+    //   document.getElementById("error").style.display="none";
+}
+    </script>
+
+
+</head>
+<body>
+    <h2>Welcome to Javascript events class</h2>
+    <form action="#" method="get">
+        <label for="fn">First Name</label>
+        <input type="text" name="firstname" id="fn"  />
+        <div id="error">*first name cannot be empty</div>
+        <br>
+        <label for="ln">Last Name</label>
+        <input type="text" name="lastname" id="ln"/>
+        <br>
+        <label for="em">Email</label>
+        <input type="email" name="email" id="em"/>
+        <br>
+        <label for="contact">Phone</label>
+        <input type="number" name="contact" id="contact">
+        <br>
+    
+        
+
+        
+        
+    </form>
+
+    <button onclick="validateData()">Submit</button>
+</body>
+</html>
