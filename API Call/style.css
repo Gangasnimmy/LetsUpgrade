@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+div{
+    height: 500px;
+    width: 400px;
+    background-color: cornflowerblue;
+    margin: 100px auto;
+    padding-top: 70px;
+}
+
+button{
+    display: block;
+    margin: 20px auto;
+    
+}
