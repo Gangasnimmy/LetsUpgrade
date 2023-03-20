@@ -5,7 +5,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const mongoose = require("mongoose");
 const MOVIE_SCHEMA = require("./MOVIE_SCHEMA")
-const dbUrl = "mongodb+srv://Gangadevi:Gangz98@cluster0.gzjkv6r.mongodb.net/MovieList?retryWrites=true&w=majority";
+const dbUrl = "mongodb+srv://Gangadevi:<Password>@cluster0.gzjkv6r.mongodb.net/MovieList?retryWrites=true&w=majority";
 
 app.use(express.json());
 
